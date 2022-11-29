@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://hudagu.github.io</id>
+    <title>BigZO0</title>
+    <updated>2022-11-29T04:19:37.669Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://hudagu.github.io"/>
+    <link rel="self" href="https://hudagu.github.io/atom.xml"/>
+    <subtitle>奋斗_正青春</subtitle>
+    <logo>https://hudagu.github.io/images/avatar.png</logo>
+    <icon>https://hudagu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, BigZO0</rights>
+    <entry>
+        <title type="html"><![CDATA[同一子网下手机和PC传输文件]]></title>
+        <id>https://hudagu.github.io/post/tong-yi-zi-wang-xia-shou-ji-he-pc-chuan-shu-wen-jian/</id>
+        <link href="https://hudagu.github.io/post/tong-yi-zi-wang-xia-shou-ji-he-pc-chuan-shu-wen-jian/">
+        </link>
+        <updated>2022-11-16T14:44:10.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="同一子网下手机和pc传输文件">同一子网下手机和PC传输文件</h4>
+<p>首先，让手机和电脑连到同一热点，查看手机IP，并在手机QQ上发送图片到我的电脑，使用wireshark进行抓包，如图所示。</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2022/11/16/dA1reTqhga7WJzj.png" alt="图片.png" loading="lazy"></figure>
+<p>找到所发送的数据包，右键追踪流---TCP流，然后修改抓取方向，再改show data as为原始数据，最后另存一下。</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2022/11/16/9R5NEkvFL7UymWn.png" alt="图片.png" loading="lazy"></figure>
+<p>双击打开不了，拖进HEX进行分析，发现有多余的数据(下图中紫色标记部分)，将多余数据删除后保存。</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2022/11/16/sEWGkrJ2Qqze4ig.png" alt="图片.png" loading="lazy"></figure>
+<p>回到电脑界面，发现可以打开，还原成功！！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 不同模式下物理机、Kali虚拟机IP地址的关系]]></title>
+        <id>https://hudagu.github.io/post/bu-tong-mo-shi-xia-wu-li-ji-kali-xu-ni-ji-ip-di-zhi-de-guan-xi/</id>
+        <link href="https://hudagu.github.io/post/bu-tong-mo-shi-xia-wu-li-ji-kali-xu-ni-ji-ip-di-zhi-de-guan-xi/">
+        </link>
+        <updated>2022-11-16T13:57:10.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="不同模式下物理机-kali虚拟机ip地址的关系">不同模式下物理机、Kali虚拟机IP地址的关系</h4>
+<p>以NAT模式设置Kali虚拟机，查看ip</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2022/11/16/7ScCblqLaoTxXMu.png" alt="图片.png" loading="lazy"></figure>
+<p>以桥接模式设置Kali虚拟机，查看ip</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2022/11/16/YFxrQuDsHw694MI.png" alt="图片.png" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>
